@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
         let img = await res.buffer()
         conn.sendFile(m.chat, img, '', '*© stikerin*', m, false, { thumbnail: Buffer.alloc(0) })
     } catch (e) {
-        throw `Limit apikey habis atau error!`
+        throw `Se agota el límite de Apikey o se produce un error!`
     }
 }
 handler.help = ['wallpaperanime']

@@ -9,6 +9,6 @@ let handler = async (m, { text }) => {
 }
 handler.help = ['truth']
 handler.tags = ['fun']
-handler.command = /^(truth|kebenaran|kejujuran)$/i
+handler.command = /^(verdad|truth|honestidad)$/i
 //ftwr
 module.exports = handler

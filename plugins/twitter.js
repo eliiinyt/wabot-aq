@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args }) => {
-  if (!args[0]) throw 'Uhm...url nya mana?'
+  if (!args[0]) throw 'Uhm ... ¿dónde está la URL?'
   let res = await fetch(global.API('xteam', '/dl/twitter', { url: args[0] }, 'APIKEY'))
   if (res.status != 200) throw await res.text()
   let json = await res.json()
@@ -20,6 +20,6 @@ handler.tags = ['downloader']
 
 handler.command = /^twitter$/i
 
-handler.limit = true
+handler.limit = false
 
 module.exports = handler
