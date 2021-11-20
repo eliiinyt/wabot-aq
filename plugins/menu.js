@@ -31,21 +31,11 @@ let tags = {
 const defaultMenu = {
   before: `
 ╭─「 %me 」
-│ Hai, %name!
+│ hola %name!
 │
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
 │
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
+│ Level *%level (%exp / %maxexp)* [%xp4levelup para subir de nivel]
+│ %totalexp XP en Total
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
@@ -184,3 +174,7 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
+
+
+
+//elpepe

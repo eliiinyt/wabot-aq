@@ -5,8 +5,8 @@ const fetch = require('node-fetch')
 
 let handler = async (m, { conn, text }) => {
   if (!text) throw '¿Buscando qué?'
-  let res = await fetch(global.API('https://wall.alphacoders.com/api2.0','/get.php', {
-    auth: '3e7756c85df54b78f934a284c11abe4e',
+  let res = await fetch(global.API('https://api.pexels.com/v1/' {
+    auth: '563492ad6f917000010000019a75842b148f435fa2487429ad579abf',
     method: 'search',
     term: text
   }))

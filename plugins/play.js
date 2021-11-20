@@ -49,7 +49,7 @@ handler.tags = ['downloader']
 handler.command = /^play2?$/i
 
 handler.exp = 0
-handler.limit = true
+handler.limit = false
 
 module.exports = handler
 
